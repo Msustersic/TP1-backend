@@ -1,0 +1,24 @@
+{% extends 'plantillaBase.html' %}
+{% load static %}
+
+{% block tituloPersonalizado %}
+<title>IAs - comments received</title>
+{% endblock %}
+
+{% block mainPersonalizado %}
+  <main>
+    <h2 id="commentsID">Comentarios recibidos</h2>
+    <section id="commentsList">
+      <ul id="dataList">
+        
+      </ul>
+    </section>
+    <section id="comments">
+      <a href="{% url 'fComments' %}" class="bi bi-chat-right-text"> dejanos tu comentario!</a>
+    </section>
+  </main>
+{% endblock %}
+
+{% block scriptPersonalizado %}
+    <script src="{% static './js/comments/idxComments.js' %}" type="module"></script>
+{% endblock %}

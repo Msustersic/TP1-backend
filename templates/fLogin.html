@@ -1,0 +1,36 @@
+{% extends 'plantillaBase.html' %}
+{% load static %}
+
+{% block tituloPersonalizado %}
+<title>IAs List - Login</title>
+{% endblock %}
+
+{% block mainPersonalizado %}
+<form id="fLogin" action="" method="post" enctype="text/plain">
+  <fieldset>
+    <legend>Abrir IAs-List para edición</legend>
+    <label for="inputUsernameID">Nombre de Usuario</label>
+    <input type="text" name="username" id="inputUsernameID" size="25" minlength="3" maxlength="30" pattern="/\d+$/g" placeholder="Ingrese su nombre de usuario" required />
+    <p></p> <!-- Mensaje de error a manejar con JS -->
+    
+    <!-- 
+    <label for="email">input type="email"</label>
+    <input type="email" name="email" id="#" size="50" minlength="8" maxlength="50"
+      pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g" placeholder="Ingrese su cuenta de email" />
+     -->
+      <!-- value="micuenta@midominio.com"  -->
+    <!--<p></p> Mensaje de error a manejar con JS -->
+    
+    <label for="inputClaveID">Contraseña</label>
+    <input type="password" name="password" id="inputClaveID" size="25" minlength="8" maxlength="12" pattern="/\d+$/g"
+      placeholder="Ingrese su clave" />
+    <p></p> <!-- Mensaje de error a manejar con JS -->
+  </fieldset>
+  
+  <button id="btnLogin" name="btnLogin" type="submit">Login</button>
+</form>
+    {% endblock %}
+
+    {% block scriptPersonalizado %}
+        <script src="{% static './js/comments/idxFLogin.js' %}" type="module"></script>
+    {% endblock %}

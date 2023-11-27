@@ -1,0 +1,34 @@
+{% extends 'plantillaBase.html' %}
+{% load static %}
+
+{% block tituloPersonalizado %}
+<title>IAs List - Send us your comments</title>
+{% endblock %}
+
+{% block mainPersonalizado %}
+    <form id="fComments" method="post">
+      <fieldset>
+        <legend>Tus comentarios son bienvenidos!</legend>
+        <label for="contactName">Nombre de contacto</label>
+        <input type="text" name="contactName" id="contactName" size="25" minlength="3" maxlength="30"
+          pattern="[A-Za-z]{3,25}" placeholder="Ingrese su nombre de usuario" required />
+        <p></p>
+
+        <label for="contactEmail">Email de contacto</label>
+        <input type="email" name="emailContact" id="contactEmail" size="50" minlength="8" maxlength="50"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Ingrese su cuenta de email" />
+        <p></p>
+
+        <label for="contactComment">Dejanos tus comentarios:</label>
+        <textarea cols="30" rows="7" name="contactComment" id="contactComment"
+          pattern="[a-zA-Z0-9._%+-]{2,254}"></textarea>
+      </fieldset>
+
+      <button id="btnEnviar" name="btnEnviar" type="button">Enviar</button>
+      <button id="btnCancel" name="btnCancel" type="reset">Cancelar</button>
+    </form>
+    {% endblock %}
+
+    {% block scriptPersonalizado %}
+        <script src="{% static './js/comments/idxFComments.js' %}" type="module"></script>
+    {% endblock %}

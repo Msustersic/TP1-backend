@@ -1,0 +1,227 @@
+{% extends 'plantillaBase.html' %}
+{% load static %}
+
+{% block tituloPersonalizado %}
+<title>IAs - by Function</title>
+{% endblock %}
+
+{% block mainPersonalizado %}
+    <section id="iaByFunctionList">
+
+    </section>
+    <!-- <section class="byFunction">
+      <header>
+        <h2>Arte & Creatividad</h2>
+        <img src="../assets/media/icons/1.png" width="50">
+      </header>
+      <ul id="iaList">
+        <li>
+          <a href="https://openai.com/dall-e-2" target="_blank">
+            <img src="../assets/media/images/dall-e_desk.png" title="Dall-E" alt="DALL-E site">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bing.com/" target="_blank">
+            <img src="../assets/media/images/bingchat_desk.png" title="Bing Chat" alt="Bing Chat site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://inworld.ai/" target="_blank">
+            <img src="../assets/media/images/inworld_desk.png" title="InWorld" alt="Inworld site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.synthesia.io/" target="_blank">
+            <img src="../assets/media/images/synthesia_desk.png" title="Sinthesia" alt="Synthesia site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.scenario.com/" target="_blank">
+            <img src="../assets/media/images/scenario_desk.png" title="Scenario" alt="Scenario site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.zoho.com/es-xl/zia/" target="_blank">
+            <img src="../assets/media/images/zohozia_desk.png" title="Zoho Zia" alt="Zoho Zia site" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="byFunction">
+      <header>
+        <h2>Conversasionales</h2>
+        <img src="../assets/media/icons/2.png" width="50">
+      </header>
+      <ul id="iaList">
+        <li>
+          <a href="https://consensus.app/" target="_blank">
+            <img src="../assets/media/images/consensus_desk.png" title="Consensus" alt="Consensus site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://openai.com/gpt-4" target="_blank">
+            <img src="../assets/media/images/chatGPT_desk.png" title="Chat GPT-4" alt="Chat GPT-4 site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://beta.character.ai/" target="_blank">
+            <img src="../assets/media/images/characterai_desk.png" title="Character Ai" alt="Character ai site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.conversica.com/" target="_blank">
+            <img src="../assets/media/images/conversica_desk.png" title="Conversica" alt="Conversica site">
+          </a>
+        </li>
+        <li>
+          <a href="https://donotpay.com/" target="_blank">
+            <img src="../assets/media/images/donotpay_desk.png" title="DoNotPay" alt="DoNotPay site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://debuild.app/" target="_blank">
+            <img src="../assets/media/images/debuild_desk.png" title="Debuild" alt="Debuild site" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="byFunction">
+      <header>
+        <h2>Diseño</h2>
+        <img src="../assets/media/icons/3.png" width="50">
+      </header>
+      <ul id="iaList">
+        <li>
+          <a href="https://withflair.ai./" target="_blank">
+            <img src="../assets/media/images/flair_desk.png" title="Flair" alt="Flair site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://interiorai.com/" target="_blank">
+            <img src="../assets/media/images/interiorai_desk.png" title="Interior AI site" alt="Interior AI">
+          </a>
+        </li>
+        <li>
+          <a href="https://stockimg.ai/" target="_blank">
+            <img src="../assets/media/images/stockimgai_desk.png" title="Stockimg" alt="Stockimg.ai site" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="byFunction">
+      <header>
+        <h2>Educación</h2>
+        <img src="../assets/media/icons/4.png" width="50">
+      </header>
+      <ul id="iaList">
+        <li>
+          <a href="https://gptzero.me/" target="_blank">
+            <img src="../assets/media/images/gptzero_desk.png" title="GPTZero" alt="GPTZero site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://donotpay.com/" target="_blank">
+            <img src="../assets/media/images/donotpay_desk.png" title="DoNotPay" alt="DoNotPay site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.speak.com/es/es" target="_blank">
+            <img src="../assets/media/images/speak_desk.png" title="Speak" alt=">Speak site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.slidesai.io/es" target="_blank">
+            <img src="../assets/media/images/slidesai_desk.png" title="SlidesAI" alt="SlidesAI site" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="byFunction">
+      <header>
+        <h2>Programación</h2>
+        <img src="../assets/media/icons/5.png" width="50">
+      </header>
+      <ul id="iaList">
+        <li>
+          <a href="https://www.copy.ai/?via=bryan-koch&gclid=CjwKCAjw6p-oBhAYEiwAgg2PglM3C4qukuNJzCK2gYMbpjJfMgiFEN0DsaTI5_hdsgLRV5ZXaz-fABoCtgoQAvD_BwE"
+            target="_blank">
+            <img src="../assets/media/images/copyai_desk.png" title="Copy Ai" alt="Copy.ai site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://openai.com/gpt-4" target="_blank">
+            <img src="../assets/media/images/chatGPT_desk.png" title="Chat GPT-4" alt="Chat GPT-4 site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bing.com/" target="_blank">
+            <img src="../assets/media/images/bingchat_desk.png" title="Bing Chat" alt="Bing Chat site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.sybill.ai/magic-summary" target="_blank">
+            <img src="../assets/media/images/sybill_desk.png" title="Magic Summaries by Sybill"
+              alt="Magic Summaries by Sybill site" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="byFunction">
+      <header>
+        <h2>Automatización</h2>
+        <img src="../assets/media/icons/6.png" width="50">
+      </header>
+      <ul id="iaList">
+        <li>
+          <a href="https://lumen5.com/" target="_blank">
+            <img src="../assets/media/images/lumen5_desk.png" title="Lumen 5" alt="Lumen 5 site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://replylatam.com/" target="_blank">
+            <img src="../assets/media/images/reply_desk.png" title="Reply" alt="Reply site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://clickup.com/" target="_blank">
+            <img src="../assets/media/images/clickup_desk.png" title="Clickup" alt="Clickup site">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.luxerone.com/" target="_blank">
+            <img src="../assets/media/images/luxer_desk.png" title="Luxer" alt="Luxer site">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="byFunction">
+      <header>
+        <h2>Texto y Traducción</h2>
+        <img src="../assets/media/icons/7.png" width="50">
+      </header>
+      <ul id="iaList">
+        <li>
+          <a href="https://www.deepl.com/es/translator" target="_blank">
+            <img src="../assets/media/images/deepl_desk.png" title="Deep L" alt="Depp L site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.grammarly.com/grammar-check" target="_blank">
+            <img src="../assets/media/images/grammarly_desk.png" title="Grammarly" alt="Grammarly site" />
+          </a>
+        </li>
+        <li>
+          <a href="https://copycreator.com/" target="_blank">
+            <img src="../assets/media/images/copycreator_desk.png" title="Copy Creator" alt="Copy Creator site" />
+          </a>
+        </li>
+      </ul>
+    </section> -->
+    <section id="comments">
+      <a href="{% url 'byFunction' %}" class="bi bi-chat-right-text"> dejanos tu comentario!</a>
+    </section> 
+{% endblock %}
+
+{% block scriptPersonalizado %}
+    <script src="{% static './js/iasByType/idxIAsByType.js' %}" type="module"></script>
+{% endblock %}

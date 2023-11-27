@@ -1,0 +1,21 @@
+{% extends 'plantillaBase.html' %}
+{% load static %}
+
+{% block tituloPersonalizado %}
+  <title>One Site, All Artificial Intelligence</title>
+{% endblock %}
+  
+  {% block mainPersonalizado %}
+    <section>
+      <ul id="iaList">
+        
+      </ul>
+    </section>
+    <section id="comments">
+      <a href="{% url 'fComments' %}" class="bi bi-chat-right-text"> dejanos tu comentario!</a>
+    </section>
+    {% endblock %}
+
+{% block scriptpersonalizado %}
+  <script src="{% static './js/index/idxIAsList.js' %}" type="module"></script>
+{% endblock %}
