@@ -129,10 +129,9 @@ DATABASES = {
     }
 }
 
-AUTH_USER_MODEL = 'ias.CustomUser'
+
 
 AUTHENTICATION_BACKENDS = [
-    'ias.backends.CustomUserBackend',
     'django.contrib.auth.backends.ModelBackend',
 ]
 

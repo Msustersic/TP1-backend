@@ -16,15 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from . import views
 from .views import IasPage
 from .views import ByFunctionPage
 from .views import CommentsPage
-from .views import CommentsForm
 from .views import LoginForm
-from .views import register_view, login_view
 from .views import logout_view
-
+from .views import CommentsForm
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,7 +30,7 @@ urlpatterns = [
     path('byFunction/', ByFunctionPage.as_view(), name= 'byFunction'),
     path('comments/', CommentsPage.as_view(), name= 'comments'),
     path('fComments/', CommentsForm.as_view(), name= 'fComments'),
-    path('register/', register_view, name='register'),
-    path('login/', login_view, name='fLogin'),
     path('logout/', logout_view, name='logout'),
+    path('login/', LoginForm.as_view(), name= 'fLogin'),
 ]
+

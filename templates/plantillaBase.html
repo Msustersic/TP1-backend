@@ -34,10 +34,13 @@
             <li><a href="{% url 'byFunction' %}">byFunction</a></li>
             <li><a href="{% url 'comments' %}">comments</a></li>
             {% if user.is_authenticated %}
-            <li><a href="{% url 'logout' %}"><i class="bi bi-arrow-left-circle"></i></a></li>
+            <li><a href="{% url 'logout' %}"><i class="bi bi-x-square"></i></a></li>
         {% else %}
             <li><a href="{% url 'fLogin' %}"><i class="bi bi-person-circle"></i></a></li>
         {% endif %}
+        
+        
+        
          </ul>
       </nav>
 
